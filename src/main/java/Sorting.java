@@ -32,7 +32,7 @@ public class Sorting {
        }
     }
 
-    private int compareTwoLines(String s1, String s2){
+    public int compareTwoLines(String s1, String s2){
         int result = 0;
         String[] s1Split = s1.split("\t");
         String[] s2Split = s2.split("\t");
@@ -76,7 +76,7 @@ public class Sorting {
         return result;
     }
 
-    private boolean isNumeric(String str)
+    public boolean isNumeric(String str)
     {
         NumberFormat formatter = NumberFormat.getInstance();
         ParsePosition pos = new ParsePosition(0);
